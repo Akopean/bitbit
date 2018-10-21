@@ -1,0 +1,14 @@
+/bower_components/*
+/node_modules
+index.psd
+/templates
+mobile_home.psd
+mobile_menu.psd
+4.psd
+.idea
+*.psd
+src/
+mix-manifest.json
+package.json
+webpack.mix.js
+package-lock.json
