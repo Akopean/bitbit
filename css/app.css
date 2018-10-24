@@ -15017,6 +15017,7 @@ a:hover {
 
 .head .login .login-f-link {
   margin-right: 10px;
+  font-size: 10px;
 }
 
 .head .login .login-create .field {
@@ -15115,7 +15116,7 @@ a:hover {
   }
   .head .login {
     display: block;
-    text-align: left;
+    text-align: center;
     padding: 25px 0 45px;
   }
   .head .login .btn-custom {
@@ -15991,8 +15992,9 @@ a:hover {
   width: 16px;
   height: 16px;
   margin: 0 10px 0 0;
-  color: #777777;
+  color: #f6ac2d;
   text-align: center;
+  text-shadow: 2px 2px 4px #f6ac00;
 }
 
 .info .card-item ol li span {
@@ -16369,7 +16371,7 @@ a:hover {
   background-size: cover;
 }
 
-.auth-icon {
+.auth-link .auth-icon {
   display: block;
   width: 26px;
   height: 26px;
@@ -16378,11 +16380,11 @@ a:hover {
   margin: 0;
 }
 
-.auth-icon.facebook {
-  background-position: center -170px;
+.auth-link .auth-icon.facebook {
+  background-position: center -172px !important;
 }
 
-.auth-clients {
+#w0 .auth-clients {
   display: block;
   margin: 0;
   list-style: none;
@@ -16390,8 +16392,8 @@ a:hover {
   padding: 0;
 }
 
-.auth-clients li {
-  float: none !important;
+#w0 .auth-clients li {
+  float: none;
   margin: 0 5px;
   display: inline-block;
 }
@@ -16423,7 +16425,22 @@ a:hover {
   padding-top: 5px;
 }
 
+#login-create p a:not(:last-child) {
+  border-right: 1px solid #896c30;
+  padding: 0 6px;
+}
+
 @media only screen and (max-width: 992px) {
+  #login-create p {
+    margin-bottom: 0;
+  }
+  #login-create {
+    display: none;
+  }
+  #login-create.logined {
+    display: block;
+    margin-top: 10px;
+  }
   #login-create.active {
     display: block;
     position: absolute;
@@ -16440,12 +16457,6 @@ a:hover {
     right: 10px;
     font-size: 22px;
     display: block;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  #login-create {
-    display: none;
   }
 }
 
